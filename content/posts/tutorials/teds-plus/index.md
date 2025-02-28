@@ -3,14 +3,17 @@ author: "DovydasTEDS"
 title: "TEDS Plus"
 date: "2019-03-05"
 description: "A guide to TEDS Plus"
-tags: ["posts"]
+tags: ["posts", "tutorials"]
+images:
+- teds-plus-banner.png
+- teds-plus-title.png
 ShowToc: false
 ShowBreadCrumbs: false
 ---
 
 <div align="center">
   <a href="https://modrinth.com/modpack/teds-plus">
-    <img src="https://cdn.modrinth.com/data/sVo3hU3v/images/cc335b9dc6e90030aa7ff4bac1aaefa0e08c0a71.png" alt="Logo" height="110">
+    <img src="teds-plus-title.png" alt="Logo" height="110">
   </a>
   <br/>
   <a href="https://modrinth.com/modpack/teds-plus">
