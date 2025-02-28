@@ -1,12 +1,15 @@
 ---
-author: "DovydasTEDS"
-title: "TEDS Plus"
-date: "2019-03-05"
-description: "A guide to TEDS Plus"
-tags: ["posts", "tutorials"]
+author: DovydasTEDS
+title: TEDS Plus
+date: 2019-03-05
+description: A guide to TEDS Plus
+tags:
+  - posts
+  - tutorials
+  - minecraft
 images:
-- teds-plus-banner.png
-ShowToc: false
+  - teds-plus-banner.png
+ShowToc: true
 ShowBreadCrumbs: true
 ---
 
