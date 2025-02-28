@@ -63,9 +63,9 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "DovydasTEDS"
+    Title: "TeamTEDS"
     Content: >
-      Hello...
+      :wave: This website is ran by [@DovydasTEDS](https://github.com/DovydasTEDS)
 
   socialIcons:
     - name: Discord
@@ -147,3 +147,5 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
+  googleAnalytics:
+    ID: G-YXQ36CNTQK
