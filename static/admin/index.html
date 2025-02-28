@@ -11,4 +11,29 @@
     <link rel="stylesheet" href="/admin/dark.css">
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
+
+  <script>
+    var PostPreview = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        var image = entry.getIn(['data', 'thumbnail']);
+        var imageContainer = (image) ? h('section', {className: "mdc-card__media", style: {backgroundImage: `url(${image})`, height: '20rem'}},) : h('div');
+        return h('div', {},
+          h('div', { className: "blog-post" },
+            imageContainer,
+            h('div', { },
+              h('h1', { }, 
+                h('span', { }, entry.getIn(['data', 'title']))
+              ),
+            ),
+            h('div', {className: "post-body"},
+              h('div', { }, this.props.widgetFor('body'))
+            )
+          )
+        )
+        }
+    });
+    
+    CMS.registerPreviewTemplate("blog", PostPreview);
+    </script>
 </html>
