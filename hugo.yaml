@@ -74,6 +74,9 @@ params:
     - name: github
       title: View Source on Github
       url: "https://github.com/dovydasteds/website"
+    - name: X
+      title: Visit our X page
+      url: "https://x.com/TeamTEDS"
 
   # editPost:
   #   URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
