@@ -6,7 +6,6 @@ description: "A guide to TEDS Plus"
 tags: ["posts", "tutorials"]
 images:
 - teds-plus-banner.png
-- teds-plus-title.png
 ShowToc: false
 ShowBreadCrumbs: false
 ---
