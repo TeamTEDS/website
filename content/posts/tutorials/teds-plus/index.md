@@ -7,7 +7,7 @@ tags: ["posts", "tutorials"]
 images:
 - teds-plus-banner.png
 ShowToc: false
-ShowBreadCrumbs: false
+ShowBreadCrumbs: true
 ---
 
 <div align="center">
