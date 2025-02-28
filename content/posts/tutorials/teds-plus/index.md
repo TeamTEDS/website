@@ -6,11 +6,10 @@ description: A guide to TEDS Plus
 tags:
   - posts
   - tutorials
-  - teds-plus
   - minecraft
 images:
   - teds-plus-banner.png
-ShowToc: false
+ShowToc: true
 ShowBreadCrumbs: true
 ---
 
