@@ -145,7 +145,7 @@ markup:
 services:
   instagram:
     disableInlineCSS: true
-  twitter:
+  x:
     disableInlineCSS: true
   googleAnalytics:
     ID: G-YXQ36CNTQK
