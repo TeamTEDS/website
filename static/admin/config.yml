@@ -4,8 +4,18 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
   base_url: https://teamteds.tech
   auth_endpoint: /api/auth
-media_folder: static/img
-public_folder: /img
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://teamteds.tech
+display_url: https://teamteds.tech
+logo_url: https://teamteds.tech/favicon/favicon.svg
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 collections:
   - name: "posts"
     label: "Posts"
@@ -14,14 +24,33 @@ collections:
     folder: "content/posts"
     # Support Hugo page bundles that puts index.md and images in folders named by slug
     path: "{{slug}}/index"
-    media_folder: "images"
-    public_folder: "images"
+    media_folder: ""
+    public_folder: ""
     fields: # The fields for each document, usually in front matter
     - { label: "Author", name: "author", widget: "string" }
     - { label: "Title", name: "title", widget: "string" }
     - { label: "Publish Date", name: "date", widget: "datetime" }
     - { label: "Description", name: "description", widget: "text" }
-    - { label: "Tags", name: "tags", widget: "list", required: false, field: {label: "Tag", name: "tag", widget: "string"} }
+    - { label: "Tags", name: "tags", widget: "list", required: true, field: {label: "Tag", name: "tag", widget: "string"} }
+    - { label: "Images", name: "images", widget: "list", required: false, field: {label: "Image", name: "image", choose_url: false, widget: "image"} }   
+    - { label: "Show table of contents", name: "ShowToc", widget: "boolean" }
+    - { label: "Breadcrumbs Navigaion", name: "ShowBreadCrumbs", widget: "boolean" }
+    - { label: "Body", name: "body", widget: "markdown" }
+  - name: "tutorials"
+    label: "Tutorials"
+    label_singular: "Tutorial"
+    # Where to store posts (relative to the project root)
+    folder: "content/posts/tutorials"
+    # Support Hugo page bundles that puts index.md and images in folders named by slug
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    fields: # The fields for each document, usually in front matter
+    - { label: "Author", name: "author", widget: "string" }
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Publish Date", name: "date", widget: "datetime" }
+    - { label: "Description", name: "description", widget: "text" }
+    - { label: "Tags", name: "tags", widget: "list", required: true, field: {label: "Tag", name: "tag", widget: "string"} }
     - { label: "Images", name: "images", widget: "list", required: false, field: {label: "Image", name: "image", choose_url: false, widget: "image"} }   
     - { label: "Show table of contents", name: "ShowToc", widget: "boolean" }
     - { label: "Breadcrumbs Navigaion", name: "ShowBreadCrumbs", widget: "boolean" }
