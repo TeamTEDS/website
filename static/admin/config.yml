@@ -41,7 +41,7 @@ collections:
     label: "Tutorials"
     label_singular: "Tutorial"
     # Where to store posts (relative to the project root)
-    folder: "content/posts/tutorials"
+    folder: "content/tutorials"
     # Support Hugo page bundles that puts index.md and images in folders named by slug
     path: "{{slug}}/index"
     media_folder: ""
