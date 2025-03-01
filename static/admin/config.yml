@@ -9,7 +9,7 @@ public_folder: "/images/uploads"
 
 site_url: https://teamteds.tech
 display_url: https://teamteds.tech
-logo_url: https://teamteds.tech/favicon/favicon.svg
+logo_url: https://teamteds.tech/favicon.svg
 
 slug:
   encoding: "ascii"
