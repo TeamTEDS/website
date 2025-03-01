@@ -2,6 +2,7 @@ baseURL: https://teamteds.tech
 languageCode: en-us
 title: TeamTEDS
 theme: ["PaperMod"]
+copyright: "[TeamTEDS](https://teamteds.tech)"
 
 pagination:
   pagesize: 5
@@ -19,7 +20,7 @@ mainsections: ["posts", "tutorials"]
 
 minify:
   disableXML: true
-  # minifyOutput: true
+  minifyOutput: true
 
 outputs:
   home:
@@ -156,3 +157,4 @@ services:
     disableInlineCSS: true
   googleAnalytics:
     ID: G-YXQ36CNTQK
+
