@@ -63,6 +63,11 @@ params:
       - name: Tags
         url: tags
 
+  taxonomies:
+      category: categories
+      tag: tags
+      series: series
+
   homeInfoParams:
     Title: "TeamTEDS"
     Content: >
@@ -81,7 +86,9 @@ params:
 
   social:
     twitter: TeamTEDS
-    x: Teamteds
+    x: TeamTEDS
+
+  
 
   # editPost:
   #   URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
@@ -130,7 +137,27 @@ markup:
     # codeFences: true
     # guessSyntax: true
     # lineNos: true
-    # style: monokai
+    # style: monokai#
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 40
+
 
 # privacy:
 #   vimeo:

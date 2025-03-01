@@ -4,9 +4,11 @@ title: TEDS Plus
 date: 2019-03-05
 description: A guide to TEDS Plus
 tags:
-  - posts
-  - tutorials
   - minecraft
+  - modrinth
+  - gaming
+categories:
+  - tutorials
 images:
   - teds-plus-banner.png
 ShowToc: true
